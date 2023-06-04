@@ -2,7 +2,6 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "../assets/Logo.png";
 
 function Navigation() {
   return (
@@ -15,32 +14,38 @@ function Navigation() {
         <Container>
           <Navbar.Brand>
             <Link to={"/"} className="nav-link">
-              <img src={Logo} alt="Logo" width={80} />
-              {"THE HONEYCOMB MINISTRIES"}
+              <span className="text-white fw-bold logo-text">THE HONEYCOMB MINISTRIES</span>
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link>
-                <Link to="/events" className="nav-link">
+                <Link to="/" className="nav-link text-white fw-semibold">
+                  HOME
+                </Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link to="/events" className="nav-link text-white fw-semibold">
                   EVENTS
                 </Link>
               </Nav.Link>
               <Nav.Link>
-                <Link to="/contact-us" className="nav-link">
+                <Link to="/contact-us" className="nav-link text-white fw-semibold">
                   CONTACT
                 </Link>
               </Nav.Link>
               <Nav.Link>
-                <Link to="/events" className="nav-link">
+                <Link to="/events" className="nav-link text-white fw-semibold">
                   GALLERY
                 </Link>
               </Nav.Link>
               <Nav.Link>
-                <Link to="/events" className="nav-link">
-                  MENTORSHIP
-                </Link>
+                <div className="mentorship-btn fw-semibold rounded-pill px-3">
+                  <Link to="/mentorship" className="nav-link" style={{color: "rgba(246, 201, 80"}}>
+                    MENTORSHIP
+                  </Link>
+                </div>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

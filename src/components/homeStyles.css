@@ -1,0 +1,14 @@
+.core-values {
+    transition: transform 500ms;
+}
+
+.core-values:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 600px) {
+    .core-values {
+        width: 55vw !important;
+        margin-inline: auto;
+    }
+}

@@ -26,8 +26,8 @@ function Hero() {
             <img src={Logo} alt="Logo" width={250}/>
               <h3 className="display-3 fw-bold">WELCOME BELOVED</h3>
               <p className="fs-4 fw-bold fst-italic w-100">
-                <span>The decrees of the Lord are sweeter than</span> <span style={{color: "rgba(228, 141, 35, 0.9)"}}>HONEY</span> from the
-                <span style={{color: "rgba(228, 141, 35, 0.9)"}}> HONEYCOMB</span> <br/>(Psalm 19:9-10)
+                <span>The decrees of the Lord are sweeter than</span> <span className="text-yellow">HONEY</span> from the
+                <span className="text-yellow"> HONEYCOMB</span> <br/>(Psalm 19:9-10)
               </p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -43,8 +43,8 @@ function Hero() {
             <img src={Logo} alt="Logo" width={250}/>
               <h3 className="display-3 fw-bold">2023 THEME</h3>
               <p className="fs-4 fw-bold fst-italic w-100 text-uppercase">
-                Our Year of <span style={{color: "rgba(228, 141, 35, 0.9)"}}>Total Surrender</span> to the
-                <span style={{color: "rgba(228, 141, 35, 0.9)"}}> Kingdom’s Mandate</span>
+                Our Year of <span className="text-yellow">Total Surrender</span> to the
+                <span className="text-yellow"> Kingdom’s Mandate</span>
               </p>
             </Carousel.Caption>
           </Carousel.Item>

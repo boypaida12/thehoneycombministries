@@ -14,14 +14,14 @@ function Navigation() {
         <Container>
           <Navbar.Brand>
             <Link to={"/"} className="nav-link">
-              <span className="text-white logo-text" style={{fontWeight: 700}}>THE <span style={{color: "rgba(228, 141, 35, 0.9)"}}> HONEYCOMB</span> MINISTRIES</span>
+              <span className="text-white logo-text fw-bold">THE <span style={{color: "rgba(228, 141, 35, 0.9)"}}> HONEYCOMB</span> MINISTRIES</span>
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link>
-                <Link to="/" className="nav-link text-white" style={{fontWeight: 500}}>
+                <Link to="/" className="nav-link text-white fw-semibold">
                   HOME
                 </Link>
               </Nav.Link>
@@ -41,7 +41,7 @@ function Navigation() {
                 </Link>
               </Nav.Link>
               <Nav.Link>
-                <div className="mentorship-btn fw-semibold rounded-pill px-3">
+                <div className="mentorship-btn fw-bold rounded-pill px-3">
                   <Link to="/mentorship" className="nav-link" style={{color: "rgba(228, 141, 35, 0.9)"}}>
                     MENTORSHIP
                   </Link>

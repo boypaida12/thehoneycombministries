@@ -9,10 +9,10 @@ function Founder() {
     <Container fluid className="bg-body-tertiary">
     <Container>
         <Row>
-            <Col md={6} style={{height: "80vh", overflow: "hidden"}}>
+            <Col md={6}>
                     <Image src={FounderImage} alt="Founder of the Ministries" fluid/>
             </Col>
-            <Col className=" align-self-center">
+            <Col className=" align-self-center" md={6}>
             <p className='text-uppercase display-5 fw-semibold'>Meet our founder</p>
             <p className="text-uppercase text-yellow fs-5 fw-semibold">Lorem ipsum dolor sit amet</p>
             <p className="text-muted">Dolor sit amet consectetur adipisicing elit. Magni, consequuntur! Quas nemo laborum ipsum dolorem voluptas eum! Possimus, neque rem.</p>

@@ -14,7 +14,10 @@ import SloganIcon from "../assets/slogan.png";
 function About() {
   return (
     <>
-      <Container className="mt-2 mt-lg-0 d-flex align-items-end" style={{height: "95vh"}}>
+      <Container
+        className="mt-2 mt-lg-0 d-flex align-items-end"
+        style={{ height: "100vh" }}
+      >
         <Row>
           <Col md={5}>
             <h1 className="text-md-start text-center fw-semibold display-4">
@@ -25,32 +28,39 @@ function About() {
                 imgSrc={Godliness}
                 altText={"Godliness-icon"}
                 description={"Godliness"}
+                bgBody={"bg-body-secondary"}
               />
               <CoreValueCard
                 imgSrc={Integrity}
                 altText={"Integrity-icon"}
                 description={"Integrity"}
+                bgBody={"bg-body-tertiary"}
               />
               <CoreValueCard
                 imgSrc={BrotherlyLove}
                 altText={"Brotherly-Love-icon"}
                 description={"Brotherly Love"}
+                bgBody={"bg-body-tertiary"}
               />
               <CoreValueCard
                 imgSrc={Loyalty}
                 altText={"Loyalty-icon"}
                 description={"Discipline & Loyalty"}
+                bgBody={"bg-body-secondary"}
               />
             </Row>
           </Col>
-          <Col>
-            <div className="text-end">
+          <Col md={7}>
+            <div className="text-lg-end">
               <h2 className="text-uppercase display-6">About</h2>
               <h3 className="display-4 text-yellow fw-semibold">
                 The Ministries
               </h3>
             </div>
-            <div className="bg-yellow d-flex align-items-center" style={{height: "30rem"}}>
+            <div
+              className="bg-yellow d-flex align-items-center"
+              style={{ height: "30rem" }}
+            >
               <Row className="gap-2 px-1 mx-auto">
                 <MSVCard
                   imgSrc={MissionIcon}

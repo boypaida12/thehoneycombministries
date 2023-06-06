@@ -4,6 +4,7 @@ import Hero from '../components/Hero'
 import About from '../components/About'
 import "../components/homeStyles.css"
 import Founder from '../components/Founder'
+import Programs from '../components/Programs'
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
     <Hero/>
     <About/>
     <Founder/>
+    <Programs/>
     </>
   )
 }

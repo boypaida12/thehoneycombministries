@@ -6,7 +6,7 @@ import { Col, Image } from "react-bootstrap";
 function MSVCard({ title, description, imgSrc }) {
   return (
     <>
-      <Col className="text-center  pt-3">
+      <Col className="text-center" style={{width:"20rem"}}>
         <Image src={imgSrc} width={50}/>
         <p className="text-muted fw-bold">{title}</p>
         <hr className="w-25 mx-auto"/>

@@ -9,7 +9,7 @@ function Founder() {
     <Container fluid className="bg-body-tertiary">
     <Container>
         <Row>
-            <Col md={6} style={{height: "35rem", overflow: "hidden"}}>
+            <Col md={6} style={{height: "80vh", overflow: "hidden"}}>
                     <Image src={FounderImage} alt="Founder of the Ministries" fluid/>
             </Col>
             <Col className=" align-self-center">

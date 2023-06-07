@@ -23,7 +23,7 @@ function MiniGallery() {
             <Link to="/contact-us">
             <Button
               className="mx-md-auto rounded-pill fw-bold px-3 py-2"
-              style={{ backgroundColor: "rgb(244, 164, 67)" }}
+              style={{ backgroundColor: "rgba(228, 141, 35, 0.9)" }}
               variant="contained"
               size="small"
             >

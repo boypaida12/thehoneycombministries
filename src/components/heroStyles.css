@@ -20,6 +20,11 @@
   filter: brightness(0.3);
 }
 
+.navbar-toggler {
+  color : rgb(3, 117, 58) !important;
+  background-color: rgba(228, 141, 35, 0.63) !important;
+}
+
 .mentorship-btn {
   background-color: rgb(3, 117, 58);
   box-shadow: 0px 3px 15px 1px rgba(246, 202, 80, 0.569);
@@ -30,11 +35,17 @@
 .carousel-caption {
   position: absolute;
   top: 20%;
+  right: 0 !important;
+  left: 0 !important;
 }
 
-@media screen and (max-width: 600px) {
-
+@media screen and (max-width: 900px) {
   .mentorship-btn {
     width: fit-content;
+  }
+}
+@media screen and (max-width: 425px) {
+  .logo {
+    opacity: 0;
   }
 }

@@ -15,15 +15,14 @@ function About() {
   return (
     <>
       <Container
-        className="mt-2 mt-lg-0 d-flex align-items-end"
-        style={{ height: "100vh" }}
+        className="mt-5"
       >
-        <Row>
-          <Col md={5}>
+        <Row className="gap-5 gap-lg-0">
+          <Col lg={5}>
             <h1 className="text-md-start text-center fw-semibold display-4">
               Core Values
             </h1>
-            <Row className=" gap-2">
+            <Row className="row-gap-2">
               <CoreValueCard
                 imgSrc={Godliness}
                 altText={"Godliness-icon"}
@@ -50,18 +49,18 @@ function About() {
               />
             </Row>
           </Col>
-          <Col md={7}>
-            <div className="text-lg-end">
+          <Col lg={7}>
+            <div className="text-lg-end text-center">
               <h2 className="text-uppercase display-6">About</h2>
               <h3 className="display-4 text-yellow fw-semibold">
                 The Ministries
               </h3>
             </div>
             <div
-              className="bg-yellow d-flex align-items-center"
-              style={{ height: "30rem" }}
+              className=" bg-body-tertiary d-flex align-items-center"
+              style={{ minHeight: "30rem" }}
             >
-              <Row className="gap-2 px-1 mx-auto">
+              <Row className="px-1 mx-auto my-5">
                 <MSVCard
                   imgSrc={MissionIcon}
                   title={"Our Mission"}
@@ -70,17 +69,17 @@ function About() {
                   }
                 />
                 <MSVCard
-                  imgSrc={SloganIcon}
-                  title={"Our Slogan"}
-                  description={
-                    "Prioritising the Kingdom Mandate (Matthew 28:19-20)"
-                  }
-                />
-                <MSVCard
                   imgSrc={VisionIcon}
                   title={"Our Vision"}
                   description={
                     "Mature believers at large towards the unity of faith and maturity to attain the full measure of the stature of Christ"
+                  }
+                />
+                <MSVCard
+                  imgSrc={SloganIcon}
+                  title={"Our Slogan"}
+                  description={
+                    "Prioritising the Kingdom Mandate (Matthew 28:19-20)"
                   }
                 />
               </Row>

@@ -3,7 +3,6 @@ import React from "react";
 import Navigation from "./Navigation";
 import "./heroStyles.css";
 import { Carousel } from "react-bootstrap";
-import Carousel_I from "../assets/Carousel_I.jpg";
 import Carousel_II from "../assets/Carousel_II.jpg";
 import Carousel_III from "../assets/Carousel_III.jpg"
 import Logo from "../assets/Logo.png";
@@ -23,9 +22,9 @@ function Hero() {
               />
             </div>
             <Carousel.Caption className="carousel-caption">
-            <img src={Logo} alt="Logo" width={250}/>
+            <img src={Logo} className="logo" alt="Logo" width={250}/>
               <h3 className="display-3 fw-bold">WELCOME BELOVED</h3>
-              <p className="fs-4 fw-bold fst-italic w-100">
+              <p className="fs-6 fw-semibold text-light w-100">
                 <span>The decrees of the Lord are sweeter than</span> <span className="text-yellow">HONEY</span> from the
                 <span className="text-yellow"> HONEYCOMB</span> <br/>(Psalm 19:9-10)
               </p>
@@ -40,9 +39,9 @@ function Hero() {
               />
             </div>
             <Carousel.Caption className="carousel-caption">
-            <img src={Logo} alt="Logo" width={250}/>
+            <img src={Logo} className="logo" alt="Logo" width={250}/>
               <h3 className="display-3 fw-bold">2023 THEME</h3>
-              <p className="fs-4 fw-bold fst-italic w-100 text-uppercase">
+              <p className="fs-6 fw-semibold text-light w-100">
                 Our Year of <span className="text-yellow">Total Surrender</span> to the
                 <span className="text-yellow"> Kingdom’s Mandate</span>
               </p>

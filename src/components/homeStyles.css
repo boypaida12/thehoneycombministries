@@ -1,14 +1,43 @@
-.core-values {
-    transition: transform 500ms;
+.core-values, .programs {
+    transition: transform 350ms ease-out;
 }
 
 .core-values:hover {
     transform: scale(1.05);
 }
 
-@media screen and (max-width: 600px) {
+.programs:hover {
+    transform: scale(0.95);
+}
+
+.swiper-pagination-bullet-active {
+    background: rgb(244, 164, 67) !important;
+}
+
+.swiper-wrapper {
+    margin-bottom: 4rem !important;
+}
+
+.mini-gallery {
+    filter: brightness(0.7);
+    transition: filter 500ms;
+}
+
+.mini-gallery:hover {
+    filter: brightness(1.05);
+}
+
+@media screen and (max-width: 900px) {
     .core-values {
         width: 55vw !important;
         margin-inline: auto;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .gallery-image {
+        width: 95vw !important;
+        height: 20rem !important;
+    }
+}
+

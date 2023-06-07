@@ -1,10 +1,13 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React from "react";
+import Navigation from "../components/Navigation";
 
 function Events() {
   return (
-    <div>Events</div>
-  )
+    <>
+      <Navigation />
+    </>
+  );
 }
 
-export default Events
+export default Events;

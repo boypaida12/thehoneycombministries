@@ -1,19 +1,15 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { Col, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 
 function ProgramsCard({ imgSrc, title, bgBody }) {
   return (
     <>
-      <Col
-        className={`${bgBody} text-center rounded mx-auto core-values d-flex flex-column justify-content-center align-items-center`}
-        style={{ height: "14rem", width: "14rem" }}
-        md={3}
-      >
+      <div className={`rounded programs d-flex flex-column justify-content-center mx-auto align-items-center ${bgBody}`} style={{height: "14rem", width: "14rem"}}>
         <Image src={imgSrc} width={80} />
-        <p>{title}</p>
-      </Col>
+        <p className="mt-4">{title}</p>
+      </div>
     </>
   );
 }

@@ -14,10 +14,10 @@ function Navigation() {
         <Container>
           <Navbar.Brand>
             <Link to={"/"} className="nav-link">
-              <span className="text-white logo-text fw-bold">THE <span style={{color: "rgba(228, 141, 35, 0.9)"}}> HONEYCOMB</span> MINISTRIES</span>
+              <span className="text-white logo-text fw-bold fs-6">THE <span className="text-yellow"> HONEYCOMB</span> MINISTRIES</span>
             </Link>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link>

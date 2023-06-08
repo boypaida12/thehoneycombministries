@@ -11,7 +11,7 @@ function Hero() {
   return (
     <>
       <div className="carousel-wrapper">
-        <Navigation />
+        <Navigation textColor={"text-yellow"}/>
         <Carousel controls={false}>
           <Carousel.Item>
             <div className="carousel-image_overlay">

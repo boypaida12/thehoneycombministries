@@ -5,7 +5,6 @@
 .core-values:hover {
     transform: scale(1.05);
 }
-
 .programs:hover {
     transform: scale(0.95);
 }
@@ -15,7 +14,7 @@
 }
 
 .swiper-wrapper {
-    margin-bottom: 4rem !important;
+    margin-bottom: 2rem !important;
 }
 
 .mini-gallery {
@@ -38,6 +37,14 @@
     .gallery-image {
         width: 95vw !important;
         height: 20rem !important;
+    }
+
+    .h-sc {
+        height: 50vh !important
+    }
+
+    .w-sc {
+        width: 78vw !important;
     }
 }
 

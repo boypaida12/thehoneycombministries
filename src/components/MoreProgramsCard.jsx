@@ -9,7 +9,7 @@ import BenefitsCard from "./BenefitsCard";
 function MoreProgramsCard({ imgSrc, title, bgBody, benefitI, benefitII, benefitIII, benefitIV, benefitV }) {
   return (
     <>
-      <Card style={{ width: "19.5rem", cursor: "pointer" }} className={`mx-auto overflow-hidden`}>
+      <Card style={{ width: "19.5rem", cursor: "pointer" }} className={`mx-auto overflow-hidden w-sc`}>
         <div className={`${bgBody}`}>
             <ProgramsCard imgSrc={imgSrc} title={title} />
         </div>

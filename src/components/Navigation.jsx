@@ -1,17 +1,18 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-function Navigation() {
+function Navigation({textColor}) {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" className="navbar">
+      <Navbar collapseOnSelect expand="lg" className="navbar bg-yellow">
         <Container>
           <Navbar.Brand>
             <Link to={"/"} className="nav-link">
-              <span className="text-white logo-text fw-bold fs-6">
-                THE <span className="text-yellow"> HONEYCOMB</span> MINISTRIES
+              <span className={`text-white logo-text fw-bold fs-6`}>
+                THE <span className={`${textColor}`}> HONEYCOMB</span> MINISTRIES
               </span>
             </Link>
           </Navbar.Brand>
@@ -19,25 +20,25 @@ function Navigation() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link>
-                <Link to="/" className="nav-link text-white fw-semibold">
+                <Link to="/" className={`nav-link text-white fw-semibold`}>
                   HOME
                 </Link>
               </Nav.Link>
               <Nav.Link>
-                <Link to="/events" className="nav-link text-white fw-semibold">
+                <Link to="/events" className={`nav-link text-white fw-semibold`}>
                   EVENTS
                 </Link>
               </Nav.Link>
               <Nav.Link>
                 <Link
                   to="/contact-us"
-                  className="nav-link text-white fw-semibold"
+                  className={`nav-link text-white fw-semibold`}
                 >
                   CONTACT
                 </Link>
               </Nav.Link>
               <Nav.Link>
-                <Link to="/events" className="nav-link text-white fw-semibold">
+                <Link to="/gallery" className={`nav-link text-white fw-semibold`}>
                   GALLERY
                 </Link>
               </Nav.Link>
@@ -48,8 +49,7 @@ function Navigation() {
               >
                 <div className="mentorship-btn fw-bold rounded-pill px-3">
                   <span
-                    className="nav-link"
-                    style={{ color: "rgba(228, 141, 35, 0.9)" }}
+                    className="nav-link text-white"
                   >
                     MENTORSHIP
                   </span>

@@ -7,8 +7,9 @@ import Counselling from "../assets/counselling.png";
 import Worship from "../assets/worship.png";
 import Mentorship from "../assets/mentorship.png";
 import Ministration from "../assets/ministration.png";
-import { Box, Button, Modal, Typography } from "@mui/material";
-import { Container, Row } from "react-bootstrap";
+import Humanitarian from "../assets/humanitarian.png"
+import { Box, Button, Modal } from "@mui/material";
+import { Container } from "react-bootstrap";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
@@ -66,6 +67,8 @@ function Programs() {
                 imgSrc={Resources}
                 title={"Resources"}
                 bgBody={"bg-body-tertiary"}
+                mobileHeight={"h-sc"}
+                mobileWidth={"w-sc"}
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -73,6 +76,8 @@ function Programs() {
                 imgSrc={Partnership}
                 title={"Partnership Enrolment"}
                 bgBody={"bg-body-secondary"}
+                mobileHeight={"h-sc"}
+                mobileWidth={"w-sc"}
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -80,6 +85,8 @@ function Programs() {
                 imgSrc={Counselling}
                 title={"Counselling"}
                 bgBody={"bg-body-tertiary"}
+                mobileHeight={"h-sc"}
+                mobileWidth={"w-sc"}
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -87,6 +94,8 @@ function Programs() {
                 imgSrc={Worship}
                 title={"Worship"}
                 bgBody={"bg-body-secondary"}
+                mobileHeight={"h-sc"}
+                mobileWidth={"w-sc"}
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -94,6 +103,8 @@ function Programs() {
                 imgSrc={Mentorship}
                 title={"Mentorship"}
                 bgBody={"bg-body-tertiary"}
+                mobileHeight={"h-sc"}
+                mobileWidth={"w-sc"}
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -101,6 +112,8 @@ function Programs() {
                 imgSrc={Ministration}
                 title={"Ministration & Events"}
                 bgBody={"bg-body-secondary"}
+                mobileHeight={"h-sc"}
+                mobileWidth={"w-sc"}
               />
             </SwiperSlide>
           </Swiper>
@@ -127,7 +140,7 @@ function Programs() {
         <Box sx={style}>
           <div className="d-md-flex">
             <div>
-              <h1 className="display-5 mt-4 mt-lg-5">
+              <h1 className="display-5 mt-2">
                 <span className="text-yellow fw-semibold">Shalom</span> Beloved
               </h1>
               <p className="w-75">
@@ -143,12 +156,6 @@ function Programs() {
             >
               Back
             </Button>
-            <Link
-              className="align-self-center px-5 rounded-pill d-md-none d-block fw-bold"
-              onClick={handleClose}
-            >
-              Back
-            </Link>
           </div>
           <Swiper
             slidesPerView={1}
@@ -247,7 +254,7 @@ function Programs() {
             </SwiperSlide>
             <SwiperSlide>
               <MoreProgramsCard
-                imgSrc={Ministration}
+                imgSrc={Humanitarian}
                 title={"Humanitarian Endeavours"}
                 bgBody={"bg-body-tertiary"}
                 benefitI={
@@ -263,6 +270,12 @@ function Programs() {
               />
             </SwiperSlide>
           </Swiper>
+          <Link
+              className="align-self-center d-md-none d-block fw-bold text-yellow"
+              onClick={handleClose}
+            >
+              Back
+            </Link>
         </Box>
       </Modal>
     </>

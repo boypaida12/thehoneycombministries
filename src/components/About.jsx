@@ -17,8 +17,8 @@ function About() {
       <Container
         className="mt-5"
       >
-        <Row className="gap-5 gap-lg-0">
-          <Col lg={5}>
+        <Row className="gap-5 gap-lg-3">
+          <Col lg={6} className="core-value-col-width">
             <h1 className="text-md-start text-center fw-semibold display-4">
               Core Values
             </h1>
@@ -49,7 +49,7 @@ function About() {
               />
             </Row>
           </Col>
-          <Col lg={7}>
+          <Col lg={6} className="about-col-width">
             <div className="text-lg-end text-center">
               <h2 className="text-uppercase display-6">About</h2>
               <h3 className="display-4 text-yellow fw-semibold">

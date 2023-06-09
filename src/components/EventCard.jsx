@@ -9,7 +9,7 @@ function EventCard() {
   return (
     <>
       <Col md={6}>
-        <Image src={EventI} style={{ width: "45vw" }} />
+        <Image src={EventI} style={{ width: "42vw" }} />
       </Col>
       <Col className="align-self-center px-md-5">
         <p className="fs-2 fw-semibold">The Honeycomb Experience</p>

@@ -23,3 +23,16 @@ body {
   background-color: #e48d23e6;
 }
 
+.border-yellow {
+  border: 2px solid #e48d2385;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.icon-grid div:last-child {
+  grid-column-start: 2;
+}

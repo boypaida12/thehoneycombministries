@@ -26,12 +26,30 @@
     filter: brightness(1.05);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
     .core-values {
         width: 55vw !important;
         margin-inline: auto;
     }
 }
+
+@media (min-width: 601px) and (max-width: 990px) {
+    .core-values {
+        width: 40vw !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .core-value-col-width {
+      width: 42% !important
+    }
+  }
+
+  @media (min-width: 992px) {
+    .about-col-width {
+      width: 55% !important
+    }
+  }
 
 @media screen and (max-width: 425px) {
     .gallery-image {

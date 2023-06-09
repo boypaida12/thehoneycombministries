@@ -10,7 +10,7 @@ function Contact() {
   return (
     <>
       <Navigation />
-      <Container className="my-5 border-yellow rounded-4 overflow-hidden">
+      <Container className="my-5 border-yellow rounded-3 overflow-hidden">
         <Row>
           <Col md={8} className="bg-body-tertiary">
             <ContactCard />
@@ -20,7 +20,7 @@ function Contact() {
           </Col>
         </Row>
       </Container>
-      <Footer/>
+      <Footer />
     </>
   );
 }

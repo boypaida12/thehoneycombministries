@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
   line-height: 1.5;
   font-weight: 400;
 
@@ -24,7 +24,7 @@ body {
 }
 
 .border-yellow {
-  border: 2px solid #e48d2385;
+  border: 5px solid #e48d2374;
 }
 
 .icon-grid {

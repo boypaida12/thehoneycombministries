@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
 import footerData from "./FooterData";
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-function FooterCard() {
+function FooterCard({handleLinkScroll}) {
   return (
     <>
       {footerData.map((footerD, index) => (
@@ -20,6 +21,7 @@ function FooterCard() {
                   to={link.href}
                   key={i}
                   className="text-muted nav-link w-75"
+                  onClick={handleLinkScroll}
                 >
                   <small>
                     <p>{link.label}</p>

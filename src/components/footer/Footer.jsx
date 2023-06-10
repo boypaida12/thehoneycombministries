@@ -4,12 +4,19 @@ import { Container, Row } from 'react-bootstrap'
 import FooterCard from './FooterCard'
 
 function Footer() {
+  const handleLinkScroll =()=>{
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
   return (
     <>
     <Container fluid className="bg-yellow d-flex justify-content-center align-items-center" style={{ minHeight: "62vh"}}>
         <Container>
             <Row className="py-5">
-                <FooterCard/>
+                <FooterCard handleLinkScroll={handleLinkScroll}/>
             </Row>
         </Container>
     </Container>

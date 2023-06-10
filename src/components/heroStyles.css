@@ -22,7 +22,11 @@
 
 .navbar-toggler {
   color : rgb(3, 117, 58) !important;
-  background-color: rgba(228, 141, 35, 0.35) !important;
+  border: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../assets/menu.png) !important;
 }
 
 .mentorship-btn {

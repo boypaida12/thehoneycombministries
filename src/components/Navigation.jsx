@@ -19,28 +19,19 @@ function Navigation({textColor}) {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link>
-                <Link to="/" className={`nav-link text-white fw-semibold`}>
+              <Nav.Link as={Link} to="/" className={`nav-link text-white fw-semibold align-self-lg-center`}>
                   HOME
-                </Link>
               </Nav.Link>
-              <Nav.Link>
-                <Link to="/events" className={`nav-link text-white fw-semibold`}>
+              <Nav.Link as={Link} to="/events" className={`nav-link text-white fw-semibold align-self-lg-center`}>
                   EVENTS
-                </Link>
               </Nav.Link>
-              <Nav.Link>
-                <Link
-                  to="/contact-us"
-                  className={`nav-link text-white fw-semibold`}
+              <Nav.Link as={Link} to="/contact-us"
+                  className={`nav-link text-white fw-semibold align-self-lg-center`}
                 >
                   CONTACT
-                </Link>
               </Nav.Link>
-              <Nav.Link>
-                <Link to="/gallery" className={`nav-link text-white fw-semibold`}>
+              <Nav.Link as={Link} to="/gallery" className={`nav-link text-white fw-semibold align-self-lg-center`}>
                   GALLERY
-                </Link>
               </Nav.Link>
               <Nav.Link
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdPplIVaHZvmVt7Y8W05bsalHywTs6mT4KEQQYVa9pDdL6gIw/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link"

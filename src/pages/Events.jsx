@@ -8,7 +8,7 @@ import Footer from "../components/footer/Footer";
 function Events() {
   return (
     <>
-      <Navigation />
+      <Navigation shadowLg={"shadow-lg"}/>
       <Container className="my-5">
         <Row className="row-gap-5">
           <EventCard/>

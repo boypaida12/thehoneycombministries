@@ -12,7 +12,7 @@ import { Box, Button, Modal } from "@mui/material";
 import { Container } from "react-bootstrap";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import MoreProgramsCard from "./MoreProgramsCard";
 import { Link } from "react-router-dom";
@@ -48,6 +48,10 @@ function Programs() {
           <Swiper
             slidesPerView={1}
             spaceBetween={30}
+            autoplay={{
+              delay: 4500,
+              disableOnInteraction: false,
+            }}
             pagination={{
               clickable: true,
             }}
@@ -59,7 +63,7 @@ function Programs() {
                 slidesPerView: 4,
               },
             }}
-            modules={[Pagination]}
+            modules={[Autoplay, Pagination]}
             className="mySwiper my-4"
           >
             <SwiperSlide>
@@ -160,6 +164,11 @@ function Programs() {
           <Swiper
             slidesPerView={1}
             spaceBetween={30}
+            grabCursor={true}
+            autoplay={{
+              delay: 5500,
+              disableOnInteraction: false,
+            }}
             pagination={{
               clickable: true,
             }}
@@ -175,7 +184,7 @@ function Programs() {
                 slidesPerView: 4,
               },
             }}
-            modules={[Pagination]}
+            modules={[Autoplay, Pagination]}
             className="mySwiper my-4"
           >
             <SwiperSlide>

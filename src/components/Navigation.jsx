@@ -4,10 +4,10 @@ import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-function Navigation({textColor}) {
+function Navigation({textColor, shadowLg}) {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" className="navbar bg-yellow">
+      <Navbar collapseOnSelect expand="lg" className={`navbar bg-yellow ${shadowLg}`}>
         <Container>
           <Navbar.Brand>
             <Link to={"/"} className="nav-link">

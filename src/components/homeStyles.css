@@ -14,7 +14,7 @@
 }
 
 .swiper-wrapper {
-    margin-bottom: 2rem !important;
+    margin-block: 2rem 4rem !important;
 }
 
 .mini-gallery {

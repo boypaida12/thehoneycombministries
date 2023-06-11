@@ -9,8 +9,8 @@ import Footer from "../components/footer/Footer";
 function Contact() {
   return (
     <>
-      <Navigation />
-      <Container className="my-5 border-yellow rounded-3 overflow-hidden">
+      <Navigation shadowLg={"shadow-lg"}/>
+      <Container className="my-5 shadow-lg overflow-hidden">
         <Row>
           <Col md={8} className="bg-body-tertiary">
             <ContactCard />

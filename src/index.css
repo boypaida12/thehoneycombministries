@@ -24,10 +24,6 @@ body {
   background-color: #e48d23e6;
 }
 
-.border-yellow {
-  border: 5px solid #e48d2374;
-}
-
 .icon-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -36,4 +32,9 @@ body {
 
 .icon-grid div:last-child {
   grid-column-start: 2;
+}
+
+.css-16jr3vd{
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }

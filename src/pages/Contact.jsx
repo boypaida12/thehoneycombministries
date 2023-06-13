@@ -5,23 +5,30 @@ import { Col, Container, Row } from "react-bootstrap";
 import ContactCard from "../components/ContactCard";
 import ContactIcons from "../components/ContactIcons";
 import Footer from "../components/footer/Footer";
+import { motion } from "framer-motion";
 
 function Contact() {
   return (
     <>
       <div>
-        <Navigation shadowLg={"shadow-lg"}/>
-        <Container className="my-5 shadow-lg overflow-hidden">
-          <Row>
-            <Col md={8} className="bg-body-tertiary">
-              <ContactCard />
-            </Col>
-            <Col className="bg-body">
-              <ContactIcons />
-            </Col>
-          </Row>
-        </Container>
-        <Footer />
+        <Navigation shadowLg={"shadow-lg"} bgYellow={"bg-yellow"} />
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <Container className="my-5 shadow-lg overflow-hidden">
+            <Row>
+              <Col lg={8} className="bg-body-tertiary">
+                <ContactCard />
+              </Col>
+              <Col className="bg-body">
+                <ContactIcons />
+              </Col>
+            </Row>
+          </Container>
+          <Footer />
+        </motion.div>
       </div>
     </>
   );

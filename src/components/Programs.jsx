@@ -16,6 +16,7 @@ import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import MoreProgramsCard from "./MoreProgramsCard";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const style = {
   position: "fixed",
@@ -37,103 +38,103 @@ function Programs() {
   const handleClose = () => setOpen(false);
   return (
     <>
-      <Container
-        style={{ maxWidth: "1080px", minHeight: "100vh" }}
-        className="my-5 my-lg-0 d-flex flex-column justify-content-center"
-      >
-        <div>
-          <h2 className="display-4 text-center fw-semibold">
-            Programs & Packages
-          </h2>
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={30}
-            autoplay={{
-              delay: 4500,
-              disableOnInteraction: false,
-            }}
-            pagination={{
-              clickable: true,
-            }}
-            breakpoints={{
-              768: {
-                slidesPerView: 3,
-              },
-              1024: {
-                slidesPerView: 4,
-              },
-            }}
-            modules={[Autoplay, Pagination]}
-            className="mySwiper my-4"
-          >
-            <SwiperSlide>
-              <ProgramsCard
-                imgSrc={Resources}
-                title={"Resources"}
-                bgBody={"bg-body-tertiary"}
-                mobileHeight={"h-sc"}
-                mobileWidth={"w-sc"}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProgramsCard
-                imgSrc={Partnership}
-                title={"Partnership Enrolment"}
-                bgBody={"bg-body-secondary"}
-                mobileHeight={"h-sc"}
-                mobileWidth={"w-sc"}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProgramsCard
-                imgSrc={Counselling}
-                title={"Counselling"}
-                bgBody={"bg-body-tertiary"}
-                mobileHeight={"h-sc"}
-                mobileWidth={"w-sc"}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProgramsCard
-                imgSrc={Worship}
-                title={"Worship"}
-                bgBody={"bg-body-secondary"}
-                mobileHeight={"h-sc"}
-                mobileWidth={"w-sc"}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProgramsCard
-                imgSrc={Mentorship}
-                title={"Mentorship"}
-                bgBody={"bg-body-tertiary"}
-                mobileHeight={"h-sc"}
-                mobileWidth={"w-sc"}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProgramsCard
-                imgSrc={Ministration}
-                title={"Ministration & Events"}
-                bgBody={"bg-body-secondary"}
-                mobileHeight={"h-sc"}
-                mobileWidth={"w-sc"}
-              />
-            </SwiperSlide>
-          </Swiper>
-          <div className="text-center">
-            <Button
-              className="mx-md-auto rounded-pill fw-bold"
-              style={{ backgroundColor: "rgba(228, 141, 35, 0.9)" }}
-              variant="contained"
-              size="large"
-              onClick={handleOpen}
+        <Container
+          style={{ maxWidth: "1080px", minHeight: "100vh" }}
+          className="my-5 my-lg-0 d-flex flex-column justify-content-center"
+        >
+          <div>
+            <motion.h2 initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{ duration: 2}} className="display-4 text-center fw-semibold">
+              Programs & Packages
+            </motion.h2>
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={30}
+              autoplay={{
+                delay: 4500,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              breakpoints={{
+                768: {
+                  slidesPerView: 3,
+                },
+                1024: {
+                  slidesPerView: 4,
+                },
+              }}
+              modules={[Autoplay, Pagination]}
+              className="mySwiper my-4"
             >
-              Learn More
-            </Button>
+              <SwiperSlide>
+                <ProgramsCard
+                  imgSrc={Resources}
+                  title={"Resources"}
+                  bgBody={"bg-body-tertiary"}
+                  mobileHeight={"h-sc"}
+                  mobileWidth={"w-sc"}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <ProgramsCard
+                  imgSrc={Partnership}
+                  title={"Partnership Enrolment"}
+                  bgBody={"bg-body-secondary"}
+                  mobileHeight={"h-sc"}
+                  mobileWidth={"w-sc"}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <ProgramsCard
+                  imgSrc={Counselling}
+                  title={"Counselling"}
+                  bgBody={"bg-body-tertiary"}
+                  mobileHeight={"h-sc"}
+                  mobileWidth={"w-sc"}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <ProgramsCard
+                  imgSrc={Worship}
+                  title={"Worship"}
+                  bgBody={"bg-body-secondary"}
+                  mobileHeight={"h-sc"}
+                  mobileWidth={"w-sc"}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <ProgramsCard
+                  imgSrc={Mentorship}
+                  title={"Mentorship"}
+                  bgBody={"bg-body-tertiary"}
+                  mobileHeight={"h-sc"}
+                  mobileWidth={"w-sc"}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <ProgramsCard
+                  imgSrc={Ministration}
+                  title={"Ministration & Events"}
+                  bgBody={"bg-body-secondary"}
+                  mobileHeight={"h-sc"}
+                  mobileWidth={"w-sc"}
+                />
+              </SwiperSlide>
+            </Swiper>
+            <div className="text-center">
+              <Button
+                className="mx-md-auto rounded-pill fw-bold"
+                style={{ backgroundColor: "rgba(228, 141, 35, 0.9)" }}
+                variant="contained"
+                size="large"
+                onClick={handleOpen}
+              >
+                Learn More
+              </Button>
+            </div>
           </div>
-        </div>
-      </Container>
+        </Container>
 
       <Modal
         open={open}

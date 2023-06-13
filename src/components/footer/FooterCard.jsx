@@ -10,17 +10,18 @@ function FooterCard({handleLinkScroll}) {
     <>
       {footerData.map((footerD, index) => (
         <Col key={index} lg={4}>
-          <p className="fs-5 fw-bold">{footerD.title}</p>
+          <p className="fs-4 fw-bold">{footerD.title}</p>
           <small>
-            <p className="text-muted w-75">{footerD.paragraph}</p>
+            <p className="w-75">{footerD.paragraph}</p>
           </small>
           {footerD.links && (
             <>
               {footerD.links.map((link, i) => (
                 <Link
                   to={link.href}
+                  target={link.target}
                   key={i}
-                  className="text-muted nav-link w-75"
+                  className="nav-link w-75"
                   onClick={handleLinkScroll}
                 >
                   <small>

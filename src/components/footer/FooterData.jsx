@@ -13,9 +13,11 @@ const footerData = [
     links: [
       { label: "Home", href: "/" },
       { label: "Events", href: "/events" },
-      { label: "Contact", href: "/contact-us" },
+      { label: "Contact", href: "/contact" },
+      {label: "Gallery", href: "/gallery"},
       {
         label: "Mentorship",
+        target: "_blank",
         href: "https://docs.google.com/forms/d/e/1FAIpQLSeD-q_go2QZQ2LigCqMMinJEadCzeWwIob-uu_5sAhwB1HE7g/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link",
       },
     ],

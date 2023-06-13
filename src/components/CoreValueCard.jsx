@@ -3,7 +3,7 @@
 import React from "react";
 import { Col, Image } from "react-bootstrap";
 
-function CoreValueCard({ imgSrc, altText, description, bgBody }) {
+function CoreValueCard({ imgSrc, altText, description, bgBody, }) {
   return (
     <>
       <Col md={6}>

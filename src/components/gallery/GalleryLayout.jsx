@@ -3,6 +3,7 @@ import React, { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from "./photos";
+import { motion } from "framer-motion";
 
 function GalleryLayout() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -21,7 +22,9 @@ function GalleryLayout() {
     <>
 
       <div style={{maxWidth: 1240, marginInline:"auto"}}>
-          <Gallery photos={photos} onClick={openLightbox} />
+          <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration:1}}>
+            <Gallery photos={photos} onClick={openLightbox} />
+          </motion.div>
           <ModalGateway>
             {viewerIsOpen ? (
               <Modal onClose={closeLightbox}>

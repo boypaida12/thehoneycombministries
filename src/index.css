@@ -22,7 +22,7 @@ body {
 }
 
 .bg-yellow {
-  background-color: #e48d23e6;
+  background: linear-gradient(101deg, rgba(228,141,35,1) 0%, rgba(237,162,70,1) 65%, rgba(255,184,98,1) 100%);
 }
 
 .icon-grid {
@@ -33,6 +33,19 @@ body {
 
 .icon-grid div:last-child {
   grid-column-start: 2;
+}
+
+nav a {
+  transition: all 250ms ease-in-out!important;
+}
+
+nav a:hover {
+  color: rgba(255, 255, 255, 0.728) !important;
+  transform: scaleY(1.25);
+}
+
+nav a:last-child {
+  transform: none;
 }
 
 .css-16jr3vd{

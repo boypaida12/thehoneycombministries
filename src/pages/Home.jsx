@@ -7,16 +7,23 @@ import Founder from "../components/Founder";
 import Programs from "../components/Programs";
 import MiniGallery from "../components/MiniGallery";
 import Footer from "../components/footer/Footer";
+import { delay, motion } from "framer-motion";
 
 function Home() {
   return (
     <>
-      <Hero />
-      <About />
-      <Founder />
-      <Programs />
-      <MiniGallery />
-      <Footer/>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.1, duration: 0.5 }}
+      >
+        <Hero />
+        <About />
+        <Founder />
+        <Programs />
+        <MiniGallery />
+        <Footer />
+      </motion.div>
     </>
   );
 }

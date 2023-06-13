@@ -1,48 +1,61 @@
+// import Gallery_I from "../../assets/Gallery.jpg";
+// import Gallery_II from "../../assets/Gallery_I.jpg";
+// import Gallery_III from "../../assets/Gallery_II.jpg";
+// import Gallery_IV from "../../assets/Gallery_III.jpg";
+// import Gallery_V from "../../assets/Gallery_IV.jpg";
+// import Gallery_VI from "../../assets/Gallery_V.jpg";
+// import Gallery_VII from "../../assets/Gallery_VI.jpg";
+
 export const photos = [
     {
-      src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+      src: "../../../src/assets/Gallery.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
-      width: 1,
-      height: 1
-    },
-    {
-      src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
+      src: "../../../src/assets/Gallery_II.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
+      src: "../../../src/assets/Gallery_IV.jpg",
+      width: 4,
+      height: 4
+    },
+    {
+      src: "../../../src/assets/Gallery_V.jpg",
+      width: 5,
+      height: 4
+    },
+    {
+      src: "../../../src/assets/Gallery_VI.jpg",
+      width: 5,
+      height: 4
+    },
+    {
+      src: "../../../src/assets/Gallery_III.jpg",
+      width: 4,
+      height: 4
+    },
+    {
+      src: "../../../src/assets/Gallery_IX.jpg",
+      width: 6,
+      height: 4
+    },
+    {
+      src: "../../../src/assets/Gallery_X.jpg",
       width: 3,
       height: 4
     },
     {
-      src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+      src: "../../../src/assets/Gallery_VII.jpg",
       width: 4,
-      height: 3
+      height: 5
     },
     {
-      src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+      src: "../../../src/assets/Gallery_VIII.jpg",
       width: 4,
-      height: 3
-    }
+      height: 5
+    },
   ];
   

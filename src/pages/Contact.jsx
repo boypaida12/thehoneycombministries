@@ -9,18 +9,20 @@ import Footer from "../components/footer/Footer";
 function Contact() {
   return (
     <>
-      <Navigation shadowLg={"shadow-lg"}/>
-      <Container className="my-5 shadow-lg overflow-hidden">
-        <Row>
-          <Col md={8} className="bg-body-tertiary">
-            <ContactCard />
-          </Col>
-          <Col className="bg-body">
-            <ContactIcons />
-          </Col>
-        </Row>
-      </Container>
-      <Footer />
+      <div>
+        <Navigation shadowLg={"shadow-lg"}/>
+        <Container className="my-5 shadow-lg overflow-hidden">
+          <Row>
+            <Col md={8} className="bg-body-tertiary">
+              <ContactCard />
+            </Col>
+            <Col className="bg-body">
+              <ContactIcons />
+            </Col>
+          </Row>
+        </Container>
+        <Footer />
+      </div>
     </>
   );
 }

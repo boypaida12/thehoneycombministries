@@ -20,7 +20,7 @@ function GalleryLayout() {
   return (
     <>
 
-      <div className="my-5">
+      <div style={{maxWidth: 1240, marginInline:"auto"}}>
           <Gallery photos={photos} onClick={openLightbox} />
           <ModalGateway>
             {viewerIsOpen ? (

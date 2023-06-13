@@ -11,42 +11,47 @@ function ContactCard() {
           <h1 className="my-3 mb-lg-5 text-yellow fw-semibold">{`Let Us Talk`}</h1>
           <Col lg={6}>
             <Form.Group className="mb-3">
-              <Form.Label className="fw-semibold text-muted">
+              <Form.Label className="fw-semibold text-muted" htmlFor="name">
                 Full name
               </Form.Label>
               <Form.Control
                 type="name"
                 name="name"
+                id="name"
                 placeholder="Kabutey Kwashie"
               />
             </Form.Group>
           </Col>
           <Col>
             <Form.Group className="mb-3">
-              <Form.Label className="fw-semibold text-muted">
+              <Form.Label className="fw-semibold text-muted" htmlFor="email">
                 Email address
               </Form.Label>
               <Form.Control
                 type="email"
+                name="email"
+                id="email"
                 placeholder="kabuteykwashie@example.com"
               />
             </Form.Group>
           </Col>
         </Row>
 
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label className="fw-semibold text-muted">Subject</Form.Label>
+        <Form.Group className="mb-3">
+          <Form.Label className="fw-semibold text-muted" htmlFor="subject">Subject</Form.Label>
           <Form.Control
             type="text"
             name="subject"
+            id="subject"
             placeholder="kabuteykwashie@example.com"
           />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label className="fw-semibold text-muted">Message</Form.Label>
+        <Form.Group className="mb-3">
+          <Form.Label className="fw-semibold text-muted" htmlFor="message">Message</Form.Label>
           <Form.Control
             as="textarea"
             name="message"
+            id="message"
             rows={5}
             placeholder="Type message here"
           />

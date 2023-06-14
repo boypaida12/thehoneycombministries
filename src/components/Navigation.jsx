@@ -45,7 +45,7 @@ function Navigation({ textColor, shadowLg, bgYellow }) {
                   {isNavbarExpanded && (
                     <motion.div
                       className="align-self-lg-center"
-                      initial={{ x: "-100" }}
+                      initial={{ x: "-200" }}
                       animate={{ x: 0 }}
                       transition={{ delay: 0.5 + index * 0.5 }}
                     >

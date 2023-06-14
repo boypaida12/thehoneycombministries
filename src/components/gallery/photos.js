@@ -1,6 +1,6 @@
 export const photos = [
   {
-    src: "/src/assets/Gallery.jpg",
+    src: "../../assets/Gallery.jpg",
     width: 4,
     height: 3,
   },

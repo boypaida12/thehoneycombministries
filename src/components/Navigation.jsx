@@ -32,7 +32,7 @@ function Navigation({ textColor, shadowLg, bgYellow }) {
           <Navbar.Brand>
             <Link to={"/"} className="nav-link">
               <span className={`text-white logo-text fw-bold fs-6`}>
-                THE <span className={`${textColor}`}> HONEYCOMB</span>
+                THE <span className={`${textColor}`}> HONEYCOMB </span>
                 MINISTRIES
               </span>
             </Link>

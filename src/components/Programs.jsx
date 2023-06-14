@@ -26,9 +26,8 @@ const style = {
   width: "95vw",
   height: "100%",
   bgcolor: "background.paper",
-  backdropFilter: "blur(20px)",
   boxShadow: 24,
-  px: 4,
+  px: 3,
   overflowY: 'auto'
 };
 

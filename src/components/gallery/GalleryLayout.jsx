@@ -20,25 +20,29 @@ function GalleryLayout() {
   };
   return (
     <>
-
-      <div style={{maxWidth: 1240, marginInline:"auto"}}>
-          <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration:1}}>
-            <Gallery photos={photos} onClick={openLightbox} />
-          </motion.div>
-          <ModalGateway>
-            {viewerIsOpen ? (
-              <Modal onClose={closeLightbox}>
-                <Carousel
-                  currentIndex={currentImage}
-                  views={photos.map(x => ({
-                    ...x,
-                    srcset: x.srcSet,
-                    caption: x.title
-                  }))}
-                />
-              </Modal>
-            ) : null}
-          </ModalGateway>
+      <div style={{ maxWidth: 1240, marginInline: "auto" }}>
+        <img src="/src/assets/Gallery.jpg" />
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <Gallery photos={photos} onClick={openLightbox} />
+        </motion.div>
+        <ModalGateway>
+          {viewerIsOpen ? (
+            <Modal onClose={closeLightbox}>
+              <Carousel
+                currentIndex={currentImage}
+                views={photos.map((x) => ({
+                  ...x,
+                  srcset: x.srcSet,
+                  caption: x.title,
+                }))}
+              />
+            </Modal>
+          ) : null}
+        </ModalGateway>
       </div>
     </>
   );

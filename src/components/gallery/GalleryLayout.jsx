@@ -21,7 +21,6 @@ function GalleryLayout() {
   return (
     <>
       <div style={{ maxWidth: 1240, marginInline: "auto" }}>
-        <img src="/src/assets/Gallery.jpg" />
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

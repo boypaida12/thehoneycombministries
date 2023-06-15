@@ -5,7 +5,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { animate, motion } from "framer-motion";
 
-function Navigation({ textColor, shadowLg, bgYellow }) {
+function Navigation({ textColor, shadowLg, bgYellow, bgBody }) {
   const [isNavbarExpanded, setIsNavbarExpanded] = useState(false);
 
   const handleNavbarToggle = () => {
@@ -15,8 +15,8 @@ function Navigation({ textColor, shadowLg, bgYellow }) {
   const navLinks = [
     { to: "/", text: "HOME" },
     { to: "/events", text: "EVENTS" },
-    { to: "/contact", text: "CONTACT" },
     { to: "/gallery", text: "GALLERY" },
+    { to: "/contact", text: "CONTACT" },
   ];
 
   return (
@@ -24,7 +24,7 @@ function Navigation({ textColor, shadowLg, bgYellow }) {
       <Navbar
         collapseOnSelect
         expand="lg"
-        className={`navbar ${bgYellow} ${shadowLg}`}
+        className={`navbar ${shadowLg} ${bgBody}`}
         expanded={isNavbarExpanded}
         onToggle={handleNavbarToggle}
       >
@@ -93,7 +93,7 @@ function Navigation({ textColor, shadowLg, bgYellow }) {
                   rel="noreferrer"
                 >
                   <div className="mentorship-btn fw-bold rounded-pill px-3">
-                    <span className="nav-link text-white">MENTORSHIP</span>
+                    <span className="nav-link mentorship">MENTORSHIP</span>
                   </div>
                 </Nav.Link>
               )}

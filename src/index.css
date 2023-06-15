@@ -18,7 +18,11 @@ body {
 }
 
 .text-yellow {
-  color: rgba(228, 141, 35, 0.9);
+  color: rgba(228, 141, 35, 0.9) !important;
+}
+
+.text-green {
+  color: green;
 }
 
 .bg-yellow {
@@ -49,6 +53,5 @@ nav a:last-child {
 }
 
 .css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop{
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+ background-color: white !important;
 }

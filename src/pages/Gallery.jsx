@@ -7,7 +7,7 @@ import Footer from "../components/footer/Footer";
 function Gallery() {
   return (
     <>
-      <Navigation shadowLg={"shadow-lg"} bgYellow={"bg-yellow"}/>
+      <Navigation shadowLg={"shadow-lg"} bgBody={"bg-yellow"}/>
       <GalleryLayout/>
       <Footer/>
     </>

@@ -45,7 +45,7 @@ function Founder() {
                   <p className="text-uppercase text-yellow fs-4 fw-semibold">
                     Queen Ceccy
                   </p>
-                  <p>
+                  <p style={{fontSize: "1.55ch"}}>
                     {`With a deep passion for spreading the message of faith, hope, and love, Queen Ceccy embarked on a mission to establish a dynamic ministry that would impact lives and transform communities. Guided by a strong spiritual calling and a heart for serving others, she has dedicated their life to nurturing spiritual growth, empowering individuals, and fostering a sense of unity within the congregation. Through inspirational teachings, compassionate leadership, and unwavering commitment, Queen Ceccy continues to inspire countless individuals to embrace their faith, discover their purpose, and experience the transformative power of God's love.`}
                   </p>
                 </motion.div>

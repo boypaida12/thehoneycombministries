@@ -11,7 +11,7 @@ function Contact() {
   return (
     <>
       <div>
-        <Navigation shadowLg={"shadow-lg"} bgYellow={"bg-yellow"} />
+        <Navigation shadowLg={"shadow-lg"} bgBody={"bg-yellow"}/>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

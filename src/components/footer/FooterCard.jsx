@@ -12,7 +12,7 @@ function FooterCard({handleLinkScroll}) {
         <Col key={index} lg={4}>
           <p className="fs-4 fw-bold">{footerD.title}</p>
           <small>
-            <p className="w-75">{footerD.paragraph}</p>
+            <p className="w-75 text-muted">{footerD.paragraph}</p>
           </small>
           {footerD.links && (
             <>
@@ -25,7 +25,7 @@ function FooterCard({handleLinkScroll}) {
                   onClick={handleLinkScroll}
                 >
                   <small>
-                    <p>{link.label}</p>
+                    <p className="text-muted">{link.label}</p>
                   </small>
                   <hr />
                 </Link>

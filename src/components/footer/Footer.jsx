@@ -13,7 +13,7 @@ function Footer() {
 
   return (
     <>
-    <Container fluid className="bg-yellow d-flex justify-content-center align-items-center" style={{ minHeight: "62vh"}}>
+    <Container fluid className=" bg-body-secondary d-flex justify-content-center align-items-center" style={{ minHeight: "62vh"}}>
         <Container>
             <Row className="py-5">
                 <FooterCard handleLinkScroll={handleLinkScroll}/>

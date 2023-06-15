@@ -13,8 +13,8 @@ const footerData = [
     links: [
       { label: "Home", href: "/" },
       { label: "Events", href: "/events" },
-      { label: "Contact", href: "/contact" },
       {label: "Gallery", href: "/gallery"},
+      { label: "Contact", href: "/contact" },
       {
         label: "Mentorship",
         target: "_blank",

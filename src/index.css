@@ -55,3 +55,7 @@ nav a:last-child {
 .css-919eu4, .css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop{
  background-color: white !important;
 }
+
+.css-1qrom1v {
+  backdrop-filter: blur(10px);
+}

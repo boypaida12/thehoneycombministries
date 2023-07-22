@@ -41,11 +41,17 @@ body {
 
 nav a {
   transition: all 250ms ease-in-out!important;
+  color: white !important;
+}
+
+.dropdown-menu a, .dropdown-menu a:hover {
+  color: black !important;
+  transform: none;
 }
 
 nav a:hover {
   color: rgba(255, 255, 255, 0.728) !important;
-  transform: scaleY(1.25);
+  transform: scaleY(1.05);
 }
 
 nav a:last-child {
@@ -58,4 +64,29 @@ nav a:last-child {
 
 .css-1qrom1v {
   backdrop-filter: blur(10px);
+}
+
+.programs-img-container {
+  width: 19.5rem !important;
+  height: 13rem;
+  overflow: hidden;
+}
+
+.programs-img-container img {
+  object-fit: contain !important;
+}
+
+@media screen and (min-width:1650px) {
+  .event-img {
+    width: 650px !important;
+  }
+}
+@media screen and (max-width:699px) {
+  .event-img {
+    width: 320px !important;
+  }
+
+  .dropdown-menu {
+    position: absolute !important;
+  }
 }

@@ -10,7 +10,7 @@ function MiniGalleryCard({ imgSrc }) {
         xs={8}
         md={3}
         className="px-0 object-fit-cover mx-auto gallery-image"
-        style={{ height: "15rem" }}
+        style={{ height: "18rem" }}
       >
         <Image
           src={imgSrc}

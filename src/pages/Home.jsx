@@ -19,7 +19,6 @@ function Home() {
       >
         <Hero />
         <About />
-        <Founder />
         <Programs />
         <MiniGallery />
         <Footer />

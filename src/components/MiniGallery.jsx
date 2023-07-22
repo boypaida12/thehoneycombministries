@@ -22,7 +22,7 @@ function MiniGallery() {
       <Container fluid>
         <Row>
           <Col
-            style={{ height: "15rem" }}
+            style={{ height: "18rem" }}
             className="d-flex flex-column justify-content-center bg-body-tertiary text-center"
             md={4}
           >
@@ -30,9 +30,8 @@ function MiniGallery() {
               We would Love to Listen to You and to Join Us
             </motion.p>
             <Button
-              className="mx-md-auto text-decoration-none rounded-pill fw-bold px-3 py-2"
+              className="mx-md-auto text-decoration-none rounded-pill fw-bold px-3 py-2 text-white"
               style={{ backgroundColor: "rgba(228, 141, 35, 0.9)" }}
-              variant="contained"
               size="small"
               as={Link}
               to="/contact"

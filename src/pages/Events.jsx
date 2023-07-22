@@ -1,27 +1,22 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import Navigation from "../components/Navigation";
-import { Container, Row } from "react-bootstrap";
-import EventCard from "../components/EventCard";
+import { Container } from "react-bootstrap";
 import Footer from "../components/footer/Footer";
 import { motion } from "framer-motion";
+import Founder from "../components/Founder";
 
 function Events() {
   return (
     <>
-      <Navigation shadowLg={"shadow-lg"} bgBody={"bg-yellow"}/>
+      <Navigation shadowLg={"shadow-lg"} bgBody={"bg-yellow"} />
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
         <Container className="my-5">
-          <Row className="row-gap-5">
-            <EventCard />
-            <EventCard />
-            <EventCard />
-            <EventCard />
-          </Row>
+          <Founder />
         </Container>
       </motion.div>
       <Footer />

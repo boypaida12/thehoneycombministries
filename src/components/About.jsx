@@ -54,7 +54,7 @@ function About() {
               </Row>
             </motion.div>
           </Col>
-          <Col lg={6} className="about-col-width">
+          <Col lg={6} className="about-col-width" id="aboutMinistry">
             <motion.div
               initial={{ opacity: 0, y: -50 }}
               whileInView={{ opacity: 1, y: 0 }}

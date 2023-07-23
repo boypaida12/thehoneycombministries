@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
 import ProgramsCard from "./ProgramsCard";
@@ -15,11 +16,10 @@ import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import MoreProgramsCard from "./MoreProgramsCard";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import benefits from "./benefits";
 
-function Programs() {
+function Programs({handleLinkScroll}) {
   return (
     <>
       <Container className="mb-5" id="packages">
@@ -70,6 +70,8 @@ function Programs() {
                   imgSrc={benefit.imgSrc}
                   title={benefit.title}
                   benefitsData={benefit.benefits}
+                  id={benefit.title}
+                  handleLinkScroll={handleLinkScroll}
                 />
               </SwiperSlide>
               ))}

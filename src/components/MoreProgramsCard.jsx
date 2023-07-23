@@ -2,13 +2,11 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { Button, Card, Col, Row } from "react-bootstrap";
-import ProgramsCard from "./ProgramsCard";
 import BenefitsCard from "./BenefitsCard";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import programTypes from "./programTypes";
 
-function MoreProgramsCard({ imgSrc, title, motionRepeat, benefitsData }) {
+function MoreProgramsCard({ imgSrc, title, benefitsData, id, handleLinkScroll }) {
   return (
     <>
       <motion.div
@@ -32,10 +30,7 @@ function MoreProgramsCard({ imgSrc, title, motionRepeat, benefitsData }) {
                 ))}
               </Card.Text>
             </Card.Body>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1.5, repeat: motionRepeat }}
+            <div
             >
               <Button
                 className="text-decoration-underline rounded-pill fw-bold px-3 py-2 w-50 mb-2"
@@ -43,11 +38,12 @@ function MoreProgramsCard({ imgSrc, title, motionRepeat, benefitsData }) {
                 variant="contained"
                 size="small"
                 as={Link}
-                to={`/${programTypes.id}`}
+                to={`/learn-more/package-details/${id}`}
+                onClick={handleLinkScroll}
               >
                 Learn more
               </Button>
-            </motion.div>
+            </div>
           </div>
         </Card>
       </motion.div>

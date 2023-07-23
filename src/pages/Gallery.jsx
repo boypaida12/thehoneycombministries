@@ -2,14 +2,12 @@
 import React from "react";
 import Navigation from "../components/Navigation";
 import GalleryLayout from "../components/gallery/GalleryLayout";
-import Footer from "../components/footer/Footer";
 
 function Gallery() {
   return (
     <>
       <Navigation shadowLg={"shadow-lg"} bgBody={"bg-yellow"}/>
       <GalleryLayout/>
-      <Footer/>
     </>
   );
 }

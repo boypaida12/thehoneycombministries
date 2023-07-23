@@ -12,7 +12,7 @@ const footerData = [
     title: "QUICK LINKS",
     links: [
       { label: "Home", href: "/" },
-      { label: "Events", href: "/events" },
+      { label: "Founder", href: "/events" },
       {label: "Gallery", href: "/gallery"},
       { label: "Contact", href: "/contact" },
       {

@@ -9,12 +9,12 @@ function MiniGalleryCard({ imgSrc }) {
       <Col
         xs={8}
         md={3}
-        className="px-0 object-fit-cover mx-auto gallery-image"
-        style={{ height: "18rem" }}
+        className="px-0 mx-auto gallery-image"
+        style={{ height: "18rem", width: "16.5rem" }}
       >
         <Image
           src={imgSrc}
-          className="mini-gallery d-block w-100 h-100"
+          className="mini-gallery d-block w-100 h-100 object-fit-cover"
           fluid
         />
       </Col>

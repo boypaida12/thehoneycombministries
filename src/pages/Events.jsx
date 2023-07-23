@@ -2,7 +2,6 @@
 import React from "react";
 import Navigation from "../components/Navigation";
 import { Container } from "react-bootstrap";
-import Footer from "../components/footer/Footer";
 import { motion } from "framer-motion";
 import Founder from "../components/Founder";
 
@@ -19,7 +18,6 @@ function Events() {
           <Founder />
         </Container>
       </motion.div>
-      <Footer />
     </>
   );
 }

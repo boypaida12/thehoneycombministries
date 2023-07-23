@@ -27,7 +27,6 @@ function Contact() {
               </Col>
             </Row>
           </Container>
-          <Footer />
         </motion.div>
       </div>
     </>

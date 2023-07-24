@@ -42,8 +42,8 @@ function Programs({handleLinkScroll}) {
               spaceBetween={30}
               grabCursor={true}
               autoplay={{
-                delay: 5500,
-                disableOnInteraction: false,
+                delay: 6500,
+                disableOnInteraction: true,
               }}
               pagination={{
                 clickable: true,

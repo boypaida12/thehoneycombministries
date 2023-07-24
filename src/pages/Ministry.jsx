@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap";
 import { motion } from "framer-motion";
 import Founder from "../components/Founder";
 
-function Events() {
+function Ministry() {
   return (
     <>
       <Navigation shadowLg={"shadow-lg"} bgBody={"bg-yellow"} />
@@ -22,4 +22,4 @@ function Events() {
   );
 }
 
-export default Events;
+export default Ministry;

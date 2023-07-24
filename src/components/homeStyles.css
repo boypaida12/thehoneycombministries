@@ -18,12 +18,12 @@
 }
 
 .mini-gallery {
-    filter: brightness(0.7);
+    filter: brightness(0.85);
     transition: filter 500ms;
 }
 
 .mini-gallery:hover {
-    filter: brightness(1.05);
+    filter: brightness(1);
 }
 
 @media screen and (max-width: 600px) {

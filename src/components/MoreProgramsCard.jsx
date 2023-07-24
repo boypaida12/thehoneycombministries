@@ -33,15 +33,14 @@ function MoreProgramsCard({ imgSrc, title, benefitsData, id, handleLinkScroll })
             <div
             >
               <Button
-                className="text-decoration-underline rounded-pill fw-bold px-3 py-2 w-50 mb-2"
-                style={{ color: "rgba(228, 141, 35, 0.9)" }}
+                className=" rounded-3 text-yellow fw-bold border-yellow ms-4 my-3"
                 variant="contained"
-                size="small"
+                style={{}}
                 as={Link}
                 to={`/learn-more/package-details/${id}`}
                 onClick={handleLinkScroll}
               >
-                Learn more
+                <small>Learn more</small>
               </Button>
             </div>
           </div>

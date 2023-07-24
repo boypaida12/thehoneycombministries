@@ -33,6 +33,10 @@ body {
   );
 }
 
+.border-yellow {
+  border: 1px solid rgba(228, 141, 35, 1) !important;
+}
+
 .icon-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -48,19 +52,13 @@ nav a {
   color: white !important;
 }
 
-.dropdown-menu a,
+.dropdown-menu {
+  background-color: rgba(111, 111, 111, 0.423) !important;
+  backdrop-filter: blur(5px);
+}
+
 .dropdown-menu a:hover {
-  color: black !important;
-  transform: none;
-}
-
-nav a:hover {
-  color: rgba(255, 255, 255, 0.728) !important;
-  transform: scaleY(1.05);
-}
-
-nav a:last-child {
-  transform: none;
+  background-color: black !important;
 }
 
 .css-919eu4,

@@ -12,11 +12,11 @@ const footerData = [
     title: "QUICK LINKS",
     links: [
       { label: "Home", href: "/" },
-      { label: "Founder", href: "/events" },
+      { label: "Founder", href: "/ministry" },
       {label: "Gallery", href: "/gallery"},
       { label: "Contact", href: "/contact" },
       {
-        label: "Mentorship",
+        label: "Partnership",
         target: "_blank",
         href: "https://docs.google.com/forms/d/e/1FAIpQLSeD-q_go2QZQ2LigCqMMinJEadCzeWwIob-uu_5sAhwB1HE7g/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link",
       },

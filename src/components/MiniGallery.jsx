@@ -20,24 +20,24 @@ function MiniGallery() {
   return (
     <>
       <Container fluid>
-        <Row>
+        <Row className="">
           <Col
-            style={{ height: "18rem" }}
+            style={{ height: "15rem" }}
             className="d-flex flex-column justify-content-center bg-body-tertiary text-center"
-            md={4}
+            md={3}
           >
             <motion.p initial={{opacity: 0, y: 25}} whileInView={{opacity: 1, y:0}} transition={{duration:1}} className="fs-5 fw-semibold text-dark w-75 mx-auto">
-              We would Love to Listen to You and to Join Us
+              Join Us
             </motion.p>
             <Button
-              className="mx-md-auto text-decoration-none rounded-pill fw-bold px-3 py-2 text-white"
+              className="mx-auto text-decoration-none w-sc rounded-pill fw-bold px-3 py-2 text-white"
               style={{ backgroundColor: "rgba(228, 141, 35, 0.9)" }}
               size="small"
               as={Link}
               to="/contact"
               onClick={handleLinkScroll}
             >
-              Fellowship with Us
+              Fellowship
             </Button>
           </Col>
           <Col>

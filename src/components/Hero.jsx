@@ -3,7 +3,7 @@ import React from "react";
 import Navigation from "./Navigation";
 import "./heroStyles.css";
 import { Carousel } from "react-bootstrap";
-import Carousel_II from "../assets/Carousel_II.jpg";
+import Carousel_II from "../assets/event_I.jpg";
 import Carousel_III from "../assets/Carousel_III.jpg"
 import Logo from "../assets/Logo.png";
 import { motion } from "framer-motion";
@@ -18,7 +18,7 @@ function Hero() {
             <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration: 1.5}} className="carousel-image_overlay">
               <img
                 className="d-block w-100"
-                src={Carousel_III}
+                src={Carousel_II}
                 alt="First slide"
               />
             </motion.div>
@@ -37,7 +37,7 @@ function Hero() {
             <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration: 1.5}} className="carousel-image_overlay">
               <img
                 className="d-block w-100"
-                src={Carousel_II}
+                src={Carousel_III}
                 alt="Second slide"
               />
             </motion.div>

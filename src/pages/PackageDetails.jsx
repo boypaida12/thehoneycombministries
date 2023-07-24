@@ -3,7 +3,6 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import benefits from "../components/benefits";
 import Navigation from "../components/Navigation";
-import Footer from "../components/footer/Footer";
 import { Col, Container, Row } from "react-bootstrap";
 
 function PackageDetails() {

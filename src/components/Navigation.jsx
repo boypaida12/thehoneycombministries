@@ -13,7 +13,7 @@ function Navigation({ textColor, shadowLg, bgYellow, bgBody }) {
   };
 
   const navLinks = [
-    { to: "/events", text: "FOUNDER" },
+    { to: "/ministry", text: "MINISTRY" },
     { to: "/gallery", text: "GALLERY" },
     { to: "/contact", text: "CONTACT" },
   ];
@@ -45,11 +45,11 @@ function Navigation({ textColor, shadowLg, bgYellow, bgBody }) {
                 className="nav-link fw-semibold align-self-lg-center w-25"
               >
                 <NavDropdown.Item href="/#aboutMinistry">
-                  <small>About</small>
+                  <small className="fw-semibold text-white">About</small>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/#packages">
-                  <small>Packages</small>
+                  <small className="fw-semibold text-white">Programs</small>
                 </NavDropdown.Item>
               </NavDropdown>
               {navLinks.map((link, index) => (
@@ -97,7 +97,7 @@ function Navigation({ textColor, shadowLg, bgYellow, bgBody }) {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <small>Mentorship</small>
+                      <small className="fw-semibold text-white">Mentorship</small>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
@@ -105,7 +105,7 @@ function Navigation({ textColor, shadowLg, bgYellow, bgBody }) {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <small>Partnership</small>
+                      <small className="fw-semibold text-white">Partnership</small>
                     </NavDropdown.Item>
                   </NavDropdown>
                 </motion.div>
@@ -121,7 +121,7 @@ function Navigation({ textColor, shadowLg, bgYellow, bgBody }) {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <small>Mentorship</small>
+                    <small className="fw-semibold text-white">Mentorship</small>
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item
@@ -129,7 +129,7 @@ function Navigation({ textColor, shadowLg, bgYellow, bgBody }) {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <small>Partnership</small>
+                    <small className="fw-semibold text-white">Partnership</small>
                   </NavDropdown.Item>
                 </NavDropdown>
               )}

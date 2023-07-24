@@ -17,7 +17,7 @@
 
 .carousel-image_overlay img {
   min-height: 100vh;
-  filter: brightness(0.3);
+  filter: brightness(0.35);
   background-color: #a47a48e6;
 }
 

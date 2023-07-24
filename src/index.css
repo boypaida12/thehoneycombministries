@@ -55,6 +55,7 @@ nav a {
 .dropdown-menu {
   background-color: rgba(111, 111, 111, 0.423) !important;
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .dropdown-menu a:hover {
